@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Sidebar</title>
+  </head>
+  <body>
+    <div class="moblie">
+      <div class="sidebar--mobile" id="sidebar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#news">News</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="toggle-btn" id="show" onclick="showSidebar()">
+        Show Sidebar
+      </button>
+      <button class="toggle-btn" id="hide" onclick="hideSidebar()">
+        Hide Sidebar
+      </button>
+    </div>
+    <div class="main">
+      <div class="sidebar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#news">News</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="content">
+        <img src="./a1.png" alt="" class="image__title" />
+        <div class="content__two">
+          <h2>Title Here</h2>
+          <div class="content__two--content">
+            <p>
+              This is the centered content. It can be a paragraph, an image, or
+              any other element.
+            </p>
+          </div>
+        </div>
+        <div class="content__three">
+          <div class="content-block">
+            <h2>This is title okokok</h2>
+            <div class="content-text">
+              <img class="item_1" src="a2.png" alt="a21" />
+              <p class="item_2">
+                This is the content for the first This is the content for the
+                tent for the first This is the content for the first block. for
+                the first block. for the first block. for the first block. for
+                the first block. for the first block. for the first block. first
+                block. for the first block. for the first block. first block.
+                for the first block. for the first block. first block. for the
+                first block. for the first block.
+              </p>
+            </div>
+          </div>
+          <div class="content-block">
+            <h2>This is title okokok</h2>
+            <div class="content-text">
+              <img class="item_1" src="a2.png" alt="a21" />
+              <p class="item_2">
+                This is the content for the first This is the content for the
+                tent for the first This is the content for the first block. for
+                the first block. for the first block. for the first block. for
+                the first block. for the first block. for the first block. first
+                block. for the first block. for the first block. first block.
+                for the first block. for the first block. first block. for the
+                first block. for the first block.
+              </p>
+            </div>
+          </div>
+          <div class="content-block">
+            <h2>This is title okokok</h2>
+            <div class="content-text">
+              <img class="item_1" src="a2.png" alt="a21" />
+              <p class="item_2">
+                This is the content for the first This is the content for the
+                tent for the first This is the content for the first block. for
+                the first block. for the first block. for the first block. for
+                the first block. for the first block. for the first block. first
+                block. for the first block. for the first block. first block.
+                for the first block. for the first block. first block. for the
+                first block. for the first block.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showSidebar() {
+        document.getElementById("sidebar").style.display = "flex";
+        document.getElementById("hide").style.display = "flex";
+        document.getElementById("show").style.display = "none";
+      }
+      function hideSidebar() {
+        document.getElementById("sidebar").style.display = "none";
+        document.getElementById("show").style.display = "flex";
+        document.getElementById("hide").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
